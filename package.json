@@ -4,9 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "parcel ./src/index.html",
-    "build": "parcel --bulild ./src/index.html",
-    "lint": "eslint ./src --ext js",
+    "dev": "parcel src/index.html",
+    "build": "parcel bulild src/index.html",
+    "lint": "eslint src --ext js",
     "lint:fix": "yarn lint --fix",
     "format": "prettier --write \"{,src/**/}*.{js,jsx,html}\""
   },
