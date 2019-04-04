@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import useEntry from "../../lib/hooks/useEntry";
+import { formatDate } from "../../lib/date";
 import remark from "remark";
 import remark2react from "remark-react";
 
@@ -18,9 +19,8 @@ const Article = ({ id }) => {
 
   return (
     <article>
-      <h1>
-        {entry.fields.title}({entry.sys.createdAt})
-      </h1>
+      <h1>{entry.fields.title}</h1>
+      <label>{formatDate(entry.sys.createdAt)}に投稿</label>
       <div>
         {
           remark()
@@ -28,7 +28,6 @@ const Article = ({ id }) => {
             .processSync(entry.fields.body).contents
         }
       </div>
-      <p>最終更新日: {entry.sys.updatedAt}</p>
     </article>
   );
 };
