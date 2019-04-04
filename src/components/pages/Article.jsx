@@ -19,8 +19,11 @@ const Article = ({ id }) => {
 
   return (
     <article>
+      <label>
+        投稿日: {formatDate(entry.sys.createdAt)} 更新日:{" "}
+        {formatDate(entry.sys.updatedAt)}
+      </label>
       <h1>{entry.fields.title}</h1>
-      <label>{formatDate(entry.sys.createdAt)}に投稿</label>
       <div>
         {
           remark()

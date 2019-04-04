@@ -23,13 +23,8 @@ const ArticleList = () => {
       <ul>
         {items.map(item => (
           <li key={item.sys.id}>
-            <Link href={`/${item.sys.id}`}>
-              <div>
-                <h3>{item.fields.title}</h3>
-                <label>{formatDate(item.sys.createdAt)}</label>
-                <p>{item.fields.body.substr(0, 50)}</p>
-              </div>
-            </Link>
+            <span>{formatDate(item.sys.createdAt)}: </span>
+            <Link href={`/${item.sys.id}`}>{item.fields.title}</Link>
           </li>
         ))}
       </ul>
