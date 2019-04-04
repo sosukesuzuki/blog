@@ -35,17 +35,6 @@ const App = () => {
         <Suspense fallback={null}>
           <View />
         </Suspense>
-        <footer>
-          <h4>その他リンク</h4>
-          <ul>
-            <li>
-              <a href="https://github.com/sosukesuzuki">GitHub</a>
-            </li>
-            <li>
-              <a href="https://twitter.com/__sosukesuzuki">Twitter</a>
-            </li>
-          </ul>
-        </footer>
       </Router>
     </ContentfulContext.Provider>
   );

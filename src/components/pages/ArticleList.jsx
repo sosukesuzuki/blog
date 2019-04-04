@@ -15,19 +15,25 @@ const ArticleList = () => {
   }
 
   return (
-    <ul>
-      {items.map(item => (
-        <li key={item.sys.id}>
-          <Link href={`/${item.sys.id}`}>
-            <div>
-              <h3>{item.fields.title}</h3>
-              <label>{formatDate(item.sys.createdAt)}</label>
-              <p>{item.fields.body.substr(0, 50)}</p>
-            </div>
-          </Link>
-        </li>
-      ))}
-    </ul>
+    <>
+      <p>
+        <a href="https://sosukesuzuki.github.io">鈴木颯介</a>
+        のブログです。主にJavaScript周りの技術について投稿します。
+      </p>
+      <ul>
+        {items.map(item => (
+          <li key={item.sys.id}>
+            <Link href={`/${item.sys.id}`}>
+              <div>
+                <h3>{item.fields.title}</h3>
+                <label>{formatDate(item.sys.createdAt)}</label>
+                <p>{item.fields.body.substr(0, 50)}</p>
+              </div>
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </>
   );
 };
 
