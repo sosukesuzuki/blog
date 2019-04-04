@@ -1,0 +1,32 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel ./src/index.html",
+    "build": "parcel --bulild ./src/index.html",
+    "lint": "eslint ./src --ext js",
+    "lint:fix": "yarn lint --fix",
+    "format": "prettier --write \"{,src/**/}*.{js,jsx,html}\""
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "parcel-bundler": "^1.12.3",
+    "prettier": "^1.16.4"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "contentful": "^7.5.0",
+    "navi": "^0.12.4",
+    "normalize.css": "^8.0.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-navi": "^0.12.4",
+    "remark": "^10.0.1",
+    "remark-react": "^5.0.1"
+  }
+}
