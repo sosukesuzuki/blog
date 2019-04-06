@@ -15,7 +15,6 @@
     "babel-preset-env": "^1.7.0",
     "eslint": "^5.16.0",
     "eslint-plugin-prettier": "^3.0.1",
-    "parcel-bundler": "^1.12.3",
     "parcel-plugin-static-files-copy": "^2.0.0",
     "prettier": "^1.16.4"
   },
@@ -23,11 +22,10 @@
     "babel-polyfill": "^6.26.0",
     "contentful": "^7.5.0",
     "date-fns": "^1.30.1",
-    "navi": "^0.12.4",
+    "next": "^8.0.4",
     "normalize.css": "^8.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-navi": "^0.12.4",
     "remark": "^10.0.1",
     "remark-react": "^5.0.1"
   }
