@@ -1,5 +1,5 @@
 import React from "react";
-import { formatDate } from "../../../lib/date";
+import { formatDate } from "../lib/date";
 import remark from "remark";
 import remark2react from "remark-react";
 import createClient from "../lib/createClient";
