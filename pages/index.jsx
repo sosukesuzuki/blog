@@ -15,7 +15,9 @@ const Home = ({ items }) => {
         {items.map(item => (
           <li key={item.sys.id}>
             <span>{formatDate(item.sys.createdAt)}: </span>
-            <Link href={`/${item.sys.id}`}>{item.fields.title}</Link>
+            <Link href={`/article?id=${item.sys.id}`} as={`/${item.sys.id}`}>
+              <a>{item.fields.title}</a>
+            </Link>
           </li>
         ))}
       </ul>

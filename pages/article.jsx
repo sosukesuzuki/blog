@@ -26,9 +26,9 @@ const Article = ({ entry }) => {
   );
 };
 
-Article.getInitialProps = async ({ req: { query } }) => {
+Article.getInitialProps = async ({ query: { id } }) => {
   const client = createClient();
-  const entry = await client.getEntry(query.id);
+  const entry = await client.getEntry(id);
 
   return { entry };
 };

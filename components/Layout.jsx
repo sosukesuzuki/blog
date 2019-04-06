@@ -6,7 +6,9 @@ const Layout = ({ children }) => {
     <>
       <header>
         <Link href="/">
-          <h1>鈴木颯介のブログ</h1>
+          <a>
+            <h1>鈴木颯介のブログ</h1>
+          </a>
         </Link>
       </header>
       {children}
