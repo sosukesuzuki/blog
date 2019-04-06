@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Head from "next/head";
 import createClient from "../lib/createClient";
 import Layout from "../components/layout";
 import { formatDate } from "../lib/date";
@@ -7,6 +8,9 @@ import { formatDate } from "../lib/date";
 const Home = ({ items }) => {
   return (
     <Layout>
+      <Head>
+        <title>鈴木颯介のブログ</title>
+      </Head>
       <p>
         <a href="https://sosukesuzuki.github.io">鈴木颯介</a>
         のブログです。主にJavaScript周りの技術について投稿します。
