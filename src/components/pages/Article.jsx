@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import useEntry from "../../lib/hooks/useEntry";
-import { formatDate } from "../../lib/date";
+import { formatDate } from "../../../lib/date";
 import remark from "remark";
 import remark2react from "remark-react";
 

@@ -1,7 +1,7 @@
 import React, { useMemo } from "react";
 import { Link } from "react-navi";
 import useEntries from "../../lib/hooks/useEntries";
-import { formatDate } from "../../lib/date";
+import { formatDate } from "../../../lib/date";
 
 const ArticleList = () => {
   const entries = useEntries();
