@@ -5,6 +5,7 @@ const Dotenv = require("dotenv-webpack");
 
 module.exports = {
   webpack: config => {
+    config.resolve.extensions = ["", ".js", ".jsx"];
     config.plugins = config.plugins || [];
 
     config.plugins = [

@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "node server.js",
-    "start": "NODE_ENV=production node server.js",
+    "start": "next",
     "build": "next build",
     "lint": "eslint src --ext js",
     "lint:fix": "yarn lint --fix",
