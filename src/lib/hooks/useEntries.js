@@ -6,9 +6,13 @@ export default function useEntries() {
   const { client } = useContext(ContentfulContext);
 
   useEffect(() => {
-    client.getEntries().then(entries => {
-      setEntries(entries);
-    });
+    client
+      .getEntries({
+        order: "-sys.createdAt"
+      })
+      .then(entries => {
+        setEntries(entries);
+      });
   }, []);
 
   return entries;
