@@ -38,10 +38,8 @@ const GlobalStyle = createGlobalStyle`
 const Header = styled.header`
   display: flex;
   padding: 20px 0;
-  position: fixed;
   height: 40px;
   width: 100%;
-  top: 0;
   background-color: white;
   border-bottom: 1px solid ${border};
   div {
@@ -65,7 +63,6 @@ const Header = styled.header`
 const Main = styled.main`
   max-width: 800px;
   margin: 0 auto;
-  margin-top: 80px;
   padding: 30px 10px;
 `;
 
