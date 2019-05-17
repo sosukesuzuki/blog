@@ -19,10 +19,12 @@ function createPlugins() {
   const common = [new CopyPlugin(copyRules)];
   return DEV
     ? common.concat(new Dotenv())
-    : common.concat(new webpack.EnvironmentPlugin(
-      ["CTF_SPACE_ID"],
-      ["CTF_CDA_ACCESS_TOKEN"]
-    ))
+    : common.concat(
+        new webpack.EnvironmentPlugin(
+          ["CTF_SPACE_ID"],
+          ["CTF_CDA_ACCESS_TOKEN"]
+        )
+      );
 }
 
 module.exports = {
