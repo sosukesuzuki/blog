@@ -45,7 +45,7 @@ const Header = styled.header`
   background-color: white;
   border-bottom: 1px solid ${border};
   div {
-    width: 800px;
+    max-width: 800px;
     margin: 0 auto;
     h1 {
       margin: 0;
@@ -63,10 +63,10 @@ const Header = styled.header`
 `;
 
 const Main = styled.main`
-  width: 800px;
+  max-width: 800px;
   margin: 0 auto;
   margin-top: 80px;
-  padding: 30px 0;
+  padding: 30px 10px;
 `;
 
 const App = () => {
