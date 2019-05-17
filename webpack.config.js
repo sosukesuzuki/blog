@@ -10,8 +10,8 @@ const copyRules = [
     to: __dirname + "/dist/index.html"
   },
   {
-    from: __dirname + "/assets/**",
-    to: __dirname + "/dist"
+    from: __dirname + "/assets",
+    to: __dirname + "/dist",
   }
 ];
 
