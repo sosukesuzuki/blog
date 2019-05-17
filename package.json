@@ -38,6 +38,7 @@
     "react-dom": "^16.8.6",
     "react-navi": "^0.12.4",
     "remark": "^10.0.1",
-    "remark-react": "^5.0.1"
+    "remark-react": "^5.0.1",
+    "styled-components": "^4.2.0"
   }
 }
