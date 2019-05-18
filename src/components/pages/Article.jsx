@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import "github-markdown-css";
 import useEntry from "../../lib/hooks/useEntry";
 import { formatDate } from "../../lib/date";
 import remark from "remark";
@@ -24,7 +25,7 @@ const Article = ({ id }) => {
         {formatDate(entry.sys.updatedAt)}
       </label>
       <h1>{entry.fields.title}</h1>
-      <div>
+      <div class="markdown-body">
         {
           remark()
             .use(remark2react)
