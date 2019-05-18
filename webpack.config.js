@@ -11,7 +11,7 @@ const copyRules = [
   },
   {
     from: __dirname + "/assets",
-    to: __dirname + "/dist",
+    to: __dirname + "/dist"
   }
 ];
 
