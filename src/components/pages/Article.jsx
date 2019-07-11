@@ -1,9 +1,15 @@
 import React, { useEffect } from "react";
 import "github-markdown-css";
+import "highlight.js/styles/github.css";
 import useEntry from "../../lib/hooks/useEntry";
 import { formatDate } from "../../lib/date";
 import remark from "remark";
-import remark2react from "remark-react";
+import html from "remark-html";
+import highlight from "remark-highlight.js";
+
+const markdownProcessor = remark()
+  .use(html)
+  .use(highlight);
 
 const Article = ({ id }) => {
   const entry = useEntry(id);
@@ -25,13 +31,12 @@ const Article = ({ id }) => {
         {formatDate(entry.sys.updatedAt)}
       </label>
       <h1>{entry.fields.title}</h1>
-      <div class="markdown-body">
-        {
-          remark()
-            .use(remark2react)
-            .processSync(entry.fields.body).contents
-        }
-      </div>
+      <div
+        className="markdown-body"
+        dangerouslySetInnerHTML={{
+          __html: markdownProcessor.processSync(entry.fields.body).toString()
+        }}
+      />
     </article>
   );
 };

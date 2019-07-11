@@ -37,6 +37,8 @@
     "react-navi": "^0.12.4",
     "regenerator-runtime": "^0.13.2",
     "remark": "^10.0.1",
+    "remark-highlight.js": "^5.1.1",
+    "remark-html": "^9.0.1",
     "remark-react": "^5.0.1",
     "styled-components": "^4.2.0"
   }
