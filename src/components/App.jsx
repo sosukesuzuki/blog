@@ -24,7 +24,7 @@ const routes = mount({
 const GlobalStyle = createGlobalStyle`
   body {
     color: ${black};
-    font-family: 'M PLUS 1p', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
     a {
       color: ${blue};
       text-decoration: none;
@@ -38,20 +38,21 @@ const GlobalStyle = createGlobalStyle`
 const Header = styled.header`
   display: flex;
   padding: 20px 0;
-  height: 40px;
+  height: 30px;
   width: 100%;
-  background-color: white;
+  background-color: #3d3d3d;
   border-bottom: 1px solid ${border};
   div {
     max-width: 800px;
+    width: 800px;
     margin: 0 auto;
     h1 {
       margin: 0;
-      line-height: 40px;
-      font-size: 25px;
+      line-height: 30px;
+      font-size: 28px;
     }
     a {
-      color: ${black};
+      color: white;
       text-decoration: none;
       &:hover {
         text-decoration: underline;
