@@ -46,6 +46,11 @@ const Header = styled.header`
     max-width: 800px;
     width: 800px;
     margin: 0 auto;
+    display: flex;
+    img {
+      margin-right: 10px;
+      border-radius: 50%;
+    }
     h1 {
       margin: 0;
       line-height: 30px;
@@ -79,6 +84,7 @@ const App = () => {
         <Router routes={routes}>
           <Header>
             <div>
+              <img src="./logo.jpg" width="30px" height="30px" />
               <Link href="/">
                 <h1>鈴木颯介のブログ</h1>
               </Link>
