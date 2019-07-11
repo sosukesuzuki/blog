@@ -20,10 +20,7 @@ function createPlugins() {
   return DEV
     ? common.concat(new Dotenv())
     : common.concat(
-        new webpack.EnvironmentPlugin(
-          ["CTF_SPACE_ID"],
-          ["CTF_CDA_ACCESS_TOKEN"]
-        )
+        new webpack.EnvironmentPlugin(["CTF_SPACE_ID", "CTF_CDA_ACCESS_TOKEN"])
       );
 }
 
